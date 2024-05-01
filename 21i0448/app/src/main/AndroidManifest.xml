@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.NOTIFICATION_POSTED" />
+    <uses-permission android:name="android.permission.NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:enableOnBackInvokedCallback="true"
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:name=".Network"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.I210448"
+        tools:targetApi="31">
+        <service
+            android:name=".MyFirebaseService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".pg23bookedsession"
+            android:exported="false" />
+        <activity
+            android:name=".pg22edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".pg13calendar"
+            android:exported="false" />
+        <activity
+            android:name=".pg20call"
+            android:exported="false" />
+        <activity
+            android:name=".pg19videocall"
+            android:exported="false" />
+        <activity
+            android:name=".pg18video"
+            android:exported="false" />
+        <activity
+            android:name=".pg17photo"
+            android:exported="false" />
+        <activity
+            android:name=".pg16chat_community"
+            android:exported="false" />
+        <activity
+            android:name=".pg15chat_person"
+            android:exported="false" />
+        <activity
+            android:name=".pg11review"
+            android:exported="false" />
+        <activity
+            android:name=".pg10mentor"
+            android:exported="false" />
+        <activity
+            android:name=".pg9searchresults"
+            android:exported="false" />
+        <activity
+            android:name=".pg21profile"
+            android:exported="false" />
+        <activity
+            android:name=".pg14chat"
+            android:exported="false" />
+        <activity
+            android:name=".pg12addmentor"
+            android:exported="false" />
+        <activity
+            android:name=".pg8find"
+            android:exported="false" />
+        <activity
+            android:name=".pg24notification"
+            android:exported="false" />
+        <activity
+            android:name=".pg7home"
+            android:exported="false" />
+        <activity
+            android:name=".pg6resetpass"
+            android:exported="false" />
+        <activity
+            android:name=".pg5forgotpass"
+            android:exported="false" />
+        <activity
+            android:name=".pg4Verify"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.muhammadfakharabbas.i210448.MyFirebaseService"
+            android:exported="true"
+           >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

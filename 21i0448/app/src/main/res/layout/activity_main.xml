@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEF8F8"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_weight="10"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:src="@drawable/double_circle"
+        ></ImageView>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="75dp"
+        android:paddingTop="70dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/salsa_regular"
+            android:text="mentor"
+            android:layout_gravity="center"
+            android:textColor="#0AB6CC"
+            android:textSize="50dp"
+            android:id="@+id/txt_mentor"
+
+            />
+        <!--  -->
+        <TextView
+            android:id="@+id/txt_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/salsa_regular"
+            android:text="me"
+            android:layout_gravity="center"
+            android:textColor="#FFC107"
+            android:textSize="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:id="@+id/signup_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect. ask. learn."
+            android:layout_gravity="center"
+            android:textColor="#0AB6CC"
+            android:textSize="25dp"
+            android:paddingStart="25dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<!-- horizontal_line.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+    <stroke
+        android:width="2dp"
+        android:color="#A2E7DF" /> <!-- Set the color and width of the line -->
+</shape>

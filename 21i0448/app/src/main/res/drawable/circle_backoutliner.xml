@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+    <!-- Remove the solid color and add a stroke with desired color and width -->
+    <solid
+        android:color="#157177"
+        ></solid>
+    <!-- Set the size of the circle (adjust as needed) -->
+    <size
+        android:width="27dp"
+        android:height="27dp" />
+
+</shape>
